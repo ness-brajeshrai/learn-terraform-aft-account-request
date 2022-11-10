@@ -11,7 +11,7 @@ module "app_paclife_dev" {
   }
 
   account_tags = {
-    "Project" = "MunicReCore"
+    "Project" = "MunicRe Apps"
     "Owner"   = "Ness"
     "Type"    = "Dev"
     "OU"      = "PacLife"
