@@ -1,27 +1,30 @@
-module "sandbox" {
+module "app_paclife_dev" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "AWS-MunichRe-Sandbox@ness.com"
-    AccountName               = "sandbox-aft1"
-    ManagedOrganizationalUnit = "Sandbox"
+    AccountName               = "paclife_dev"
+    ManagedOrganizationalUnit = "PacLife"
     SSOUserEmail              = "AWS-MunichRe-Sandbox@ness.com"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserFirstName          = "paclife_dev"
     SSOUserLastName           = "AFT"
   }
 
   account_tags = {
-    "Project" = "MunicReDemo"
+    "Project" = "MunicReCore"
+    "Owner" = "Ness"
+    "Type" = "Dev"
+    "OU"  = "PacLife"
   }
 
   change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_requested_by = "Brajesh Rai"
+    change_reason       = "Provision a paclife dev account"
   }
 
   custom_fields = {
-    group = "non-prod"
+    group = "paclife_dev"
   }
 
-  account_customizations_name = "sandbox"
-}
+  account_customizations_name = "paclife_dev"
+}%          
