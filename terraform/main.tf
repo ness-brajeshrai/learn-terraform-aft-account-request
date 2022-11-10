@@ -12,9 +12,9 @@ module "app_paclife_dev" {
 
   account_tags = {
     "Project" = "MunicReCore"
-    "Owner" = "Ness"
-    "Type" = "Dev"
-    "OU"  = "PacLife"
+    "Owner"   = "Ness"
+    "Type"    = "Dev"
+    "OU"      = "PacLife"
   }
 
   change_management_parameters = {
@@ -27,4 +27,4 @@ module "app_paclife_dev" {
   }
 
   account_customizations_name = "paclife_dev"
-}%          
+}          
