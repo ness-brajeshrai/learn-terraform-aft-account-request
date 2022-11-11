@@ -1,4 +1,4 @@
-module "app_paclife_dev" {
+module "app_paclife_dev1" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
