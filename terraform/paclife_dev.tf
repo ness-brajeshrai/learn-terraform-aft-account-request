@@ -3,10 +3,10 @@ module "app_paclife_dev" {
 
   control_tower_parameters = {
     AccountEmail              = "AWS-MunichRe-packife-dev@ness.com"
-    AccountName               = "paclife_dev_"
+    AccountName               = "paclife_dev_2"
     ManagedOrganizationalUnit = "PacLife (ou-hydl-9m0kwt1i)"
     SSOUserEmail              = "AWS-MunichRe-packife-dev@ness.com"
-    SSOUserFirstName          = "paclife_dev"
+    SSOUserFirstName          = "paclife_dev_2"
     SSOUserLastName           = "AFT"
   }
 
